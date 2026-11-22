@@ -253,3 +253,18 @@ main[style*="max-width:780px"] li { margin:10px 0; }
 @media (max-width: 420px) { .nav { gap: 10px; } .nav nav { gap: 12px; } .nav-cta { padding: 6px 10px; } }
 /* keep loading-state embeds inside their card (Instagram positions them absolutely until loaded) */
 .ig-card { position: relative; overflow: hidden; }
+
+/* Topic pillars under the homepage hero (Claude, 2026-11-23) */
+.pillars { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; padding:20px max(10vw,24px); border-bottom:1px solid var(--line); background:#fff; }
+.pillars a { display:block; padding:14px 16px; border:1px solid var(--line); border-radius:14px; color:var(--ink); text-decoration:none; }
+.pillars a:hover { border-color:var(--rose); }
+.pillars strong { display:block; color:var(--plum); font:20px/1.2 Georgia,serif; }
+.pillars span { color:var(--muted); font-size:14px; }
+@media (max-width:760px){ .pillars { grid-template-columns:repeat(2,minmax(0,1fr)); padding:16px 14px; } }
+.pillars { grid-template-columns:repeat(3,minmax(0,1fr)); }
+@media (max-width:760px){ .pillars { grid-template-columns:1fr; } }
+.ig-guides { margin-top:10px; padding:12px 14px; border:1px solid var(--line); border-radius:12px; background:#fff; }
+.ig-guides strong { color:var(--plum); font-size:14px; }
+.ig-guides ul { margin:6px 0 0; padding-left:18px; }
+.ig-guides li { margin:4px 0; font-size:15px; }
+.ig-parent { margin:0 0 8px; font-size:15px; color:var(--muted); }
