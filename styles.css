@@ -251,3 +251,5 @@ main[style*="max-width:780px"] li { margin:10px 0; }
 .ig-card blockquote.ig-fallback a { display: inline-block; padding: 10px 18px; border-radius: 999px; background: var(--rose-dark); color: #fff; font-weight: 700; text-decoration: none; }
 .ig-card blockquote.ig-fallback a:hover { background: var(--plum); }
 @media (max-width: 420px) { .nav { gap: 10px; } .nav nav { gap: 12px; } .nav-cta { padding: 6px 10px; } }
+/* keep loading-state embeds inside their card (Instagram positions them absolutely until loaded) */
+.ig-card { position: relative; overflow: hidden; }
